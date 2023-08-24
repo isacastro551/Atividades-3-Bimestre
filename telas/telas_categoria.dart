@@ -16,8 +16,8 @@ class TelaCategorias extends StatelessWidget {
           crossAxisSpacing: 20,
           mainAxisSpacing: 20,
         ),
-        children: mockCategories.map((cat) {
-          return CategoriaItem(cat);
+        children: mockCategories.map((e) {
+          return CategoriaItem(e);
         }).toList(),
       ),
     );
