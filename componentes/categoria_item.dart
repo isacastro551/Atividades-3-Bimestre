@@ -1,6 +1,7 @@
 import 'package:bela/telas/tela_produtos.dart';
 import 'package:flutter/material.dart';
 import '../models/categoria.dart';
+import '../utils/rotas.dart';
 
 class CategoriaItem extends StatelessWidget {
 
@@ -9,15 +10,9 @@ class CategoriaItem extends StatelessWidget {
   CategoriaItem(this.categoria);
 
   void selecionarCategoria(BuildContext context){
-    //programar
-    Navigator.of(context).push(
-      MaterialPageRoute(builder: (_){
-        return TelaProdutos(categoria);
-      }  
-      )
-    );
-  }
-  
+
+   Navigator.of(context).pushNamed(Rotas.PRODUTOS, arguments: categoria);}
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -39,7 +34,4 @@ class CategoriaItem extends StatelessWidget {
       ),
     );
   }
-
-
-
 }
