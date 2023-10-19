@@ -3,7 +3,12 @@ import 'package:flutter/material.dart';
 import '../telas/telas_categoria.dart';
 import '../utils/rotas.dart';
 
+import 'Telas/telas_categoria.dart';
+ 
 void main() => runApp(AppCardapio());
+ 
+class AppCardapio extends StatelessWidget {
+  List<Produto> produtosValidos = dummyProdutos;
  
 class AppCardapio extends StatelessWidget {
   @override
