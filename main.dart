@@ -1,9 +1,9 @@
 import 'package:bela/telas/tela_produtos.dart';
+import 'package:bela/data/produtos.dart';
+import 'package:bela/models/produtos.dart';
 import 'package:flutter/material.dart';
 import '../telas/telas_categoria.dart';
 import '../utils/rotas.dart';
-
-import 'Telas/telas_categoria.dart';
  
 void main() => runApp(AppCardapio());
  
